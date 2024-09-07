@@ -4,6 +4,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin")
+
 
 const isProduction = process.env.NODE_ENV == 'production';
 
@@ -13,7 +15,7 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 
 const config = {
-    entry: './src/index.js',
+    entry: './src/main.jsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
     },
@@ -27,6 +29,12 @@ const config = {
         }),
 
         new MiniCssExtractPlugin(),
+        new CopyPlugin({
+            patterns: [
+                { from: "manifest.json", to: "./manifest.json" },
+            ],
+        }),
+
 
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
@@ -49,6 +57,9 @@ const config = {
             // Add your rules for custom modules here
             // Learn more about loaders from https://webpack.js.org/loaders/
         ],
+    },
+    resolve: {
+        extensions: ['.js', '.jsx'],
     },
 };
 

@@ -9,8 +9,9 @@ import Card from '../Card/Card'
 import { allowedModes } from '../../rules'
 import classes from './MacrosMenu.module.css'
 import '@splidejs/react-splide/css'
+import CONFIG from '../../config/config'
 
-const pinnedMacros = window.CONFIG.macros.filter(m => m.pinned)
+const pinnedMacros = CONFIG.macros.filter(m => m.pinned)
 
 function MacrosMenu({ visibility, fullVisibility }) {
   // settings

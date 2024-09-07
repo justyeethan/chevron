@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import useColorSchemeDetector from '../hooks/useColorSchemeDetector'
 import assignDeep from 'assign-deep'
 import settings from '../../settings/settings'

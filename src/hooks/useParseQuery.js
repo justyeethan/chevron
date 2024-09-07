@@ -2,11 +2,12 @@ import { useContext, useMemo, useRef } from 'react'
 import useIsKeyPressed from './useIsKeyPressed'
 import { SettingsContext , ColorSchemeContext} from '../contexts/Settings'
 import ParsedQuery from '../classes/parsedQuery'
+import CONFIG from '../config/config'
 
 function useParseQuery(value, type='query', origin, persist=false) {
   /* settings */
   const settings = useContext(SettingsContext)
-  const engine = window.CONFIG.engines[settings.general.searchEngine]
+  const engine = CONFIG.engines[settings.general.searchEngine]
   const forceSearchEngineOnCtrl = settings.query.forceSearchEngineOnCtrl
   // ---
 
