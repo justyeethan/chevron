@@ -1,31 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/font.css">
-    <title>Chevron</title>
-
-    <!-- coloration -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Webpack App</title>
+    </head>
+    <body>
+        <h1>Hello world!</h1>
+        <h2>Tip: Check your console</h2>
+    </body>
+    
     <script>
-      const settings = JSON.parse(localStorage.getItem('settings'))
-      if (settings) {
-        const colorScheme = settings.appearance.colorScheme === 'auto'
-          ? window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? 'dark'
-            : 'light'
-          : settings.appearance.colorScheme
-  
-        document.documentElement.style.backgroundColor = settings.appearance.themes[settings.appearance.activeTheme][colorScheme].background
-      }
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("service-worker.js")
+                    .then((registration) => {
+                        console.log("Service Worker registered: ", registration);
+                    })
+                    .catch((registrationError) => {
+                        console.error("Service Worker registration failed: ", registrationError);
+                    });
+            });
+        }
     </script>
-    <!-- -->
-
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="config.js"></script>
-    <script src="icons.js"></script>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
 </html>

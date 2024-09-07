@@ -1,0 +1,13 @@
+{
+	"version": "1.0.0",
+	"manifest_version": 3,
+	"name": "Chevron",
+	"description": "A modern start page for your browser",
+	"action": {
+			"default_popup": "js/index.html",
+			"default_title": "React Chrome Extension"
+	},
+	"chrome_url_overrides": {
+		"newtab": "js/index.html"
+	}
+}
