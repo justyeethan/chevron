@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef, useState } from 'react'
 import { SettingsContext } from '../../contexts/Settings'
 import dateFormat from 'dateformat'
-import classes from './Time.module.css'
+import * as classes from './Time.module.css'
 
 function Time() {
   /* settings */

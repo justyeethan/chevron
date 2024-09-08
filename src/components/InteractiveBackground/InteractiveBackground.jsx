@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { SettingsContext } from '../../contexts/Settings'
 import Marquee from 'react-fast-marquee'
 import getCssGradient from '../../functions/generationUtils/getCssGradient'
-import classes from './InteractiveBackground.module.css'
+import * as classes from './InteractiveBackground.module.css'
 
 function InteractiveBackground({ 
   width,

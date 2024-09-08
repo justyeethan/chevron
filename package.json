@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
+    "webpack-dev": "webpack serve --mode development",
     "build": "webpack --mode=production --node-env=production",
     "preview": "vite preview",
     "predeploy": "npm run build",
@@ -40,6 +41,7 @@
     "react-inlinesvg": "^3.0.2",
     "react-markdown": "^8.0.5",
     "react-scroll-into-view-if-needed": "^3.0.1",
+    "styled-components": "^6.1.13",
     "transform": "^1.1.2"
   },
   "devDependencies": {

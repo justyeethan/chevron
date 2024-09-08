@@ -8,7 +8,7 @@ import Notification from '../Notification/Notification'
 import InteractiveBackground from '../InteractiveBackground/InteractiveBackground'
 import { easeInBack, easeInOutQuart, easeOutElastic } from '../../functions/animUtils/easings'
 import dC from '../../functions/generationUtils/dCommandToString'
-import classes from './QuickLook.module.css'
+import * as classes from './QuickLook.module.css'
 
 /*
 animations:

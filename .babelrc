@@ -4,12 +4,15 @@
     [
       "@babel/preset-env",
       {
-        "modules": false
+        "modules": "auto"
       }
     ],
     [
       "@babel/preset-react",
-      {"runtime": "automatic"}
+      {
+        "runtime": "automatic",
+
+      }
     ]
   ]
 }

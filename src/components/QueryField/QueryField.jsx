@@ -10,7 +10,7 @@ import { allowedModes, activeKeys } from '../../rules'
 import googleAutocomplete from '../../autocomplete/googleAutocomplete'
 import History from '../../classes/localStorage/history'
 import gC from '../../functions/generationUtils/getClasses'
-import classes from './QueryField.module.css'
+import * as classes from './QueryField.module.css'
 import { useState } from 'react'
 
 const DOUBLE_PRESS_THRESHOLD = 300

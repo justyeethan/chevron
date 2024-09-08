@@ -5,6 +5,7 @@
   height: 100vh;
   overflow: hidden;
 }
+
 .app * {
   /* cursor: default; */
   user-select: none;

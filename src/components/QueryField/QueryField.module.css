@@ -33,3 +33,8 @@
   font-family: inherit;
   cursor: default;
 }
+
+.selected {
+  background: var(--primary);
+  color: var(--secondary);
+}

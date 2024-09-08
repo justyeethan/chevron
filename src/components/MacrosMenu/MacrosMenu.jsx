@@ -7,7 +7,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide'
 import { Grid } from '@splidejs/splide-extension-grid'
 import Card from '../Card/Card'
 import { allowedModes } from '../../rules'
-import classes from './MacrosMenu.module.css'
+import * as classes from './MacrosMenu.module.css'
 import '@splidejs/react-splide/css'
 import CONFIG from '../../config/config'
 

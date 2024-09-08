@@ -2,7 +2,7 @@ import { forwardRef, useRef } from 'react'
 import ScrollIntoViewIfNeeded from 'react-scroll-into-view-if-needed'
 import { TbCurrencyDollar, TbEqual } from 'react-icons/tb'
 import gC from '../../functions/generationUtils/getClasses'
-import classes from './Suggestions.module.css'
+import * as classes from './Suggestions.module.css'
 
 const prefixes = {
   currency: <TbCurrencyDollar strokeWidth='.1em'/>,
