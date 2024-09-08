@@ -4,7 +4,7 @@ import { HexColorPicker } from 'react-colorful'
 import { ButtonCheck, ButtonX } from '../Buttons/Buttons'
 import { BsDiagram2Fill, BsQuestionCircle, BsStars } from 'react-icons/bs'
 import Color from 'colorjs.io'
-import classes from './ColorPicker.module.css'
+import * as classes from './ColorPicker.module.css'
 import getContrast from '../../../functions/generationUtils/getContrast'
 
 function ColorPicker({ value, contrast, dependants, onChange, fullWidth }) {

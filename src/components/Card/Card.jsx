@@ -6,7 +6,8 @@ import { TbBan } from 'react-icons/tb'
 import getCssGradient from '../../functions/generationUtils/getCssGradient'
 import copyObj from '../../functions/dataUtils/copyObj'
 import gC from '../../functions/generationUtils/getClasses'
-import classes from './Card.module.css'
+import * as classes from './Card.module.css'
+import ICONS from '../../config/icon'
 
 const PLATE_TRANSITION_DURATION = .75
 const LOGO_TRANSITION_DURATION = .15
@@ -178,8 +179,8 @@ function getIcon(icon, color) {
     return <div>{icon}</div>
 
   // if icon name passed
-  else if (typeof icon === 'string' && Object.prototype.hasOwnProperty.call(window.ICONS, icon)) 
-    return <div dangerouslySetInnerHTML={{__html: window.ICONS?.[icon]}}/>
+  else if (typeof icon === 'string' && Object.prototype.hasOwnProperty.call(ICONS, icon)) 
+    return <div dangerouslySetInnerHTML={{__html: ICONS?.[icon]}}/>
 
   // fallback icon
   return <div><TbBan color={color}/></div>

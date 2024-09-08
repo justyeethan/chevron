@@ -1,5 +1,5 @@
 import gC from '../../functions/generationUtils/getClasses'
-import classes from './LayoutButton.module.css'
+import * as classes from './LayoutButton.module.css'
 
 function LayoutButton({ id, style, children, onClick }) {
   if (!id) throw new Error('`id` must be defined for a LayoutButton')

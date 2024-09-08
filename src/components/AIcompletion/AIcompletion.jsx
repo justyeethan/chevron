@@ -4,7 +4,7 @@ import { SettingsContext } from '../../contexts/Settings'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import Icon from '../../chatGPT/Icon'
 import createCompletion from '../../chatGPT/createCompletion'
-import classes from './AIcompletion.module.css'
+import * as classes from './AIcompletion.module.css'
 
 function getAiConfigMessage(language) {
   let config = {

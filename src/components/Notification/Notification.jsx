@@ -1,5 +1,5 @@
 import { RiErrorWarningLine } from 'react-icons/ri'
-import classes from './Notification.module.css'
+import * as classes from './Notification.module.css'
 
 function Notification({ title, description, type }) {
   let icon = null

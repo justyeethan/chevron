@@ -7,7 +7,7 @@ import MacrosMenu from '../MacrosMenu/MacrosMenu'
 import { motion, useAnimationControls } from 'framer-motion'
 import { easeInOutQuad, easeInQuad, easeOutCubic, easeOutQuad } from '../../functions/animUtils/easings'
 import dC from '../../functions/generationUtils/dCommandToString'
-import classes from './Chevron.module.css'
+import * as classes from './Chevron.module.css'
 
 /* 
 animations:

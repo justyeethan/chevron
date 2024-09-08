@@ -10,7 +10,7 @@ import { BsGearFill, BsChevronRight } from 'react-icons/bs'
 import { RiMenu5Fill } from 'react-icons/ri'
 import { allowedModes } from './rules'
 import { isMobile } from 'react-device-detect'
-import classes from './App.module.css'
+import * as styles from './App.module.css'
 import './App.css'
 
 const ignoreMobile = localStorage.getItem('ignoreMobile')
@@ -125,7 +125,7 @@ function App() {
                   : 
                   <motion.div 
                     key={timestamp}
-                    className={classes['container']} 
+                    className={styles.container} 
                     initial={{ opacity: 0 }} 
                     animate={{ opacity: 1 }} 
                     exit={redirected || { opacity: 0 }}>
@@ -149,15 +149,15 @@ function App() {
                           }
                       </LayoutButton>
                       {
-                        showReset && <div className={classes['cancel-button']} onClick={() => location.reload()}>Cancel</div>
+                        showReset && <div className={styles['cancel-button']} onClick={() => location.reload()}>Cancel</div>
                       }
                   </motion.div>
               }
             </AnimatePresence>
-          : <div className={classes['mobile-warning']}>
+          : <div className={styles['mobile-warning']}>
               <div>
                 Mobile devices are not supported :( <br />
-                <span className={classes['ignore-mobile-button']}
+                <span className={styles['ignore-mobile-button']}
                 onClick={() => {
                   localStorage.setItem('ignoreMobile', true)
                   location.reload()

@@ -1,4 +1,4 @@
-window.CONFIG = {
+const CONFIG = {
   macros: [
     {
       category: 'Entertainment',
@@ -735,3 +735,5 @@ window.CONFIG = {
     }
   }
 }
+
+export default CONFIG;
