@@ -29,6 +29,7 @@
   - [Static _<sup>(recommended)</sup>_](#static-recommended)
   - [Hosted](#hosted)
   - [GitHub Pages](#github-pages)
+  - [Extension](#extension)
     </font>
 - [Usage](#usage)
   <font size=2>
@@ -173,7 +174,7 @@ After you register the server, you will be able to access Chevron on **_localhos
 
 ### Extension
 
-Currently, this only works for Chrome and Chromium-based browsers.
+> Currently, this only works for Chrome and Chromium-based browsers.
 
 1. Clone this repository
 2. Run `npm install` to install all dependencies
