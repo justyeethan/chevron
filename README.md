@@ -357,6 +357,7 @@ Because of the limitations of the CORS policy, macros icons must be stored in `/
 - [ ] Refactor search engines system
 - [ ] Time settings
 - [ ] Extension: Fix focus problems for the chrome new startpage extension
+- [ ] Extension: Fix initial letter for selecting quick links not showing up
 
 ## Technologies
 
