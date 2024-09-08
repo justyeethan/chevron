@@ -11,7 +11,7 @@ const template = {
       mode: new types.List('chevron', ['chevron', 'legacy']),
     */
     // from confing.engines (keys)
-    searchEngine: new types.List('duckDuckGo', searchEngines),
+    searchEngine: new types.List('google', searchEngines),
     searchHistory: new types.Switch(true),
     quickRedirect: new types.Switch(false),
     animationSpeed: new types.Range(
