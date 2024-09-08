@@ -35,24 +35,20 @@ const config = {
         test: /\.(js|jsx)$/i,
         loader: "babel-loader",
       },
-    //   {
-    //     test: /\.module.css$/i,
-    //     use: [
-    //       stylesHandler,
-    //       "postcss-loader",
-    //     ],
-    //   },
       {
-        test: /\.css$/i,
+        test: /^(?!.*?\.module).*\.css$/,
+        use: [stylesHandler, "css-loader"],
+      },
+      {
+        test: /\.module\.css$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          stylesHandler,
           {
             loader: "css-loader",
             options: {
               modules: true,
             },
           },
-          "postcss-loader",
         ],
       },
       {
