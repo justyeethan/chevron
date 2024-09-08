@@ -152,7 +152,7 @@ function QueryField () {
   const input = <input 
     ref={inputRef}
     value={parsedQuery.value}
-    className={gC(classes['field'], !selectedSuggestion && classes['selected'])}
+    className={gC(classes['field'])}
     onChange={e => handleQueryChange(e.target.value)}
     style={{
       // hide when query is empty
